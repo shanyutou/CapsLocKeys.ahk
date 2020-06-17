@@ -35,7 +35,8 @@ SendInput,{Enter}
 #      以及其他的七个组合键
 multi_key = [
     ('a', '{Home}'), ('e', '{End}'), ('u', '{Backspace}'), ('d', '{DEL}'),
-    ('h', '{Left}'), ('j', '{Down}'), ('k', '{Up}'), ('l', '{Right}')
+    ('h', '{Left}'), ('j', '{Down}'), ('k', '{Up}'), ('l', '{Right}'),
+    ('b', '{Left}'), ('n', '{Down}'), ('p', '{Up}'),('f','{Right}')
 ]
 
 # 分别使用Capslock+1...9 0 - =表示F1-F12
