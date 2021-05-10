@@ -33,9 +33,10 @@ SendInput,{Enter}
 #      CapsLock2:=""
 #      Return
 #      以及其他的七个组合键
+# ('h', '{Left}'), ('j', '{Down}'), ('k', '{Up}'), ('l', '{Right}'),
 multi_key = [
     ('a', '{Home}'), ('e', '{End}'), ('u', '{Backspace}'), ('d', '{DEL}'),
-    ('h', '{Left}'), ('j', '{Down}'), ('k', '{Up}'), ('l', '{Right}'),
+    ('k', '+{End}{DEL}'),
     ('b', '{Left}'), ('n', '{Down}'), ('p', '{Up}'),('f','{Right}')
 ]
 

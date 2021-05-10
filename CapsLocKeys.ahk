@@ -15,7 +15,7 @@ IconMark := A_ScriptDir . "\mark.ico"
 Menu, Tray, Icon, %IconNum%, , 1
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-RAlt::Ctrl  ;右Alt作为Ctrl
+;RAlt::Ctrl  ;右Alt作为Ctrl
 ; CapsLock::ESC    ;大写锁定作为ESC
 +CapsLock::CapsLock  ;shift+capslock作为大写锁定
 
@@ -232,195 +232,51 @@ SendInput,!^+{DEL}
 CapsLock2:=""
 Return
 
-h::
-
-SendInput,{Left}
-CapsLock2:=""
-Return
-
-!h::
-
-SendInput,!{Left}
-CapsLock2:=""
-Return
-
-^h::
-
-SendInput,^{Left}
-CapsLock2:=""
-Return
-
-+h::
-
-SendInput,+{Left}
-CapsLock2:=""
-Return
-
-+!h::
-
-SendInput,+!{Left}
-CapsLock2:=""
-Return
-
-+^h::
-
-SendInput,+^{Left}
-CapsLock2:=""
-Return
-
-!^h::
-
-SendInput,!^{Left}
-CapsLock2:=""
-Return
-
-!^+h::
-
-SendInput,!^+{Left}
-CapsLock2:=""
-Return
-
-j::
-
-SendInput,{Down}
-CapsLock2:=""
-Return
-
-!j::
-
-SendInput,!{Down}
-CapsLock2:=""
-Return
-
-^j::
-
-SendInput,^{Down}
-CapsLock2:=""
-Return
-
-+j::
-
-SendInput,+{Down}
-CapsLock2:=""
-Return
-
-+!j::
-
-SendInput,+!{Down}
-CapsLock2:=""
-Return
-
-+^j::
-
-SendInput,+^{Down}
-CapsLock2:=""
-Return
-
-!^j::
-
-SendInput,!^{Down}
-CapsLock2:=""
-Return
-
-!^+j::
-
-SendInput,!^+{Down}
-CapsLock2:=""
-Return
-
 k::
 
-SendInput,{Up}
+SendInput,+{End}{DEL}
 CapsLock2:=""
 Return
 
 !k::
 
-SendInput,!{Up}
+SendInput,!+{End}{DEL}
 CapsLock2:=""
 Return
 
 ^k::
 
-SendInput,^{Up}
+SendInput,^+{End}{DEL}
 CapsLock2:=""
 Return
 
 +k::
 
-SendInput,+{Up}
+SendInput,++{End}{DEL}
 CapsLock2:=""
 Return
 
 +!k::
 
-SendInput,+!{Up}
+SendInput,+!+{End}{DEL}
 CapsLock2:=""
 Return
 
 +^k::
 
-SendInput,+^{Up}
+SendInput,+^+{End}{DEL}
 CapsLock2:=""
 Return
 
 !^k::
 
-SendInput,!^{Up}
+SendInput,!^+{End}{DEL}
 CapsLock2:=""
 Return
 
 !^+k::
 
-SendInput,!^+{Up}
-CapsLock2:=""
-Return
-
-l::
-
-SendInput,{Right}
-CapsLock2:=""
-Return
-
-!l::
-
-SendInput,!{Right}
-CapsLock2:=""
-Return
-
-^l::
-
-SendInput,^{Right}
-CapsLock2:=""
-Return
-
-+l::
-
-SendInput,+{Right}
-CapsLock2:=""
-Return
-
-+!l::
-
-SendInput,+!{Right}
-CapsLock2:=""
-Return
-
-+^l::
-
-SendInput,+^{Right}
-CapsLock2:=""
-Return
-
-!^l::
-
-SendInput,!^{Right}
-CapsLock2:=""
-Return
-
-!^+l::
-
-SendInput,!^+{Right}
+SendInput,!^++{End}{DEL}
 CapsLock2:=""
 Return
 
